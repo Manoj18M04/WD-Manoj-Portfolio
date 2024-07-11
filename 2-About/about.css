@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    display: flex;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar li {
+    margin: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #666666;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #b8b1b1;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: azure;
+}
+
+.navbar li:nth-child(2) a {
+    background-color: #72B626;
+    color: white;
+}
+
+.container {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container h1 {
+    font-size: 64px;
+    color: #666666;
+    text-align: center;
+}
+
+.container h1 b {
+    color: #72B626;
+}
+
+.info {
+    margin-left: 50px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+.info .formatted-list {
+    margin-top: 10px;
+}
+
+.formatted-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.formatted-list li {
+    display: flex;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.label {
+    width: 150px;
+    text-align: left;
+}
+
+.separator {
+    width: 40px;
+    text-align: center;
+}
+
+.value {
+    flex: 1;
+    text-align: left;
+    color: black;
+    font-weight: 500;
+}
+
+.roles {
+    margin-left: 150px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 25px;
+    border: 2px solid #72B626;
+}
+
+.role {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.role img {
+    width: 100px;
+    height: auto;
+}
+
+.container h3 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 40px;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    width: 80%;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    align-items: self-start;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.skill p {
+    font-size: 20px;
+    color: #666666;
+    font-weight: 400;
+}
+
+.circular-loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #4caf50 0% 0%,
+        #4caf50 0% 0%,
+        #e0e0e0 0% 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-circle {
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.percentage {
+    position: absolute;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.notable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.internship{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.internship .formatted-list, .paper .formatted-list {
+    padding: 30px;
+    border: 2px solid #72B626;
+    border-radius: 20px;
+    width: 550px;
+}
+
+.paper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.paper .formatted-list {
+    width: 90%;
+    list-style: none;
+}
